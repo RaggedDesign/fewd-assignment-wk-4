@@ -1,0 +1,290 @@
+/*
+
+Colours:
+
+Light yellow:   #FFF653;
+Mid yellow:     #CEC441;
+
+Light grey:     #C6C6C6;
+Mid grey:       #AAAAAA;
+Dark grey:      #999999;
+
+*/
+
+/*******************
+  BASE SETUP
+*******************/
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " "; 
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+/*use this in every div within the section*/
+.container {
+  margin: 0 auto;
+  width: 95%;
+}
+
+body {
+	background-color: #C6C6C6;
+}
+
+/*TEXT*/
+
+h1 {
+	font-family: 'Merriweather', serif;
+	font-size: 60px;
+	color: #FFF653;
+}
+
+h1 a {
+	text-decoration: none;
+	color: #FFF653;
+}
+
+h1 a:hover {
+	color: #fff;
+}
+
+h2 {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 60px;
+	font-weight: 700;
+	margin: 0;
+}
+
+.profile-block h2 {
+	padding: 20px 0 10px 0;
+}
+
+h3 {
+	font-family: 'Merriweather', serif;
+	font-weight: 700;
+	font-size: 50px;
+	margin: 0;
+}
+
+.tagline h3 {
+	font-style: italic;
+	margin: 0;
+}
+
+p {
+	font-family: 'Source Sans Pro', sans-serif;
+	line-height: 1.5;
+	font-size: 36px;
+	margin: 0;
+}
+
+.blocks p {
+	margin-top: 10px;
+	margin-bottom: 60px
+}
+
+.cta {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: black;
+	font-size: 40px;
+}
+
+/*SECTIONS*/
+
+header {
+	background-color: black;
+	border-bottom: solid 5px #FFF653;
+}
+
+.tagline {
+	background-color: #C6C6C6;
+	text-align: center;
+	padding: 35px 0px;
+	box-shadow: 0 2px 3px rgba(0,0,0,0.5);
+	position: relative;
+	z-index: 1;
+}
+
+.hero {
+	background: url("../images/coworking.jpg") no-repeat center top;
+	background-size: cover;
+	padding: 40px 0;
+}
+
+.blocks {
+	padding: 30px 0;
+	background-color: white;
+}
+
+footer {
+	background-color: black;
+	color: white;
+	padding: 30px 0;
+}
+
+/*DIVS*/
+
+.profile-box {
+	background-color: rgba(255,255,255,0.8);
+	padding: 45px;
+	width: 550px;
+	float: right;
+	box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.column {
+	width: 33%;
+	float: left;
+	padding: 0 45px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.column:first-child, .column:nth-child(2) {
+	border-right: solid 1px #C6C6C6;
+}
+
+.profile-pic {
+	color: #AAA;
+	background-image: url(http://via.placeholder.com/280x280);
+	background-position: center;
+	background-color: #C6C6C6;
+	padding: 170px 0;
+}
+
+/*LIST STYLES*/
+
+nav {
+	float: right;
+}
+
+nav li {
+	display: inline-block;
+	padding: 20px 5px 20px 5px;
+	margin: 0 0 0 40px;
+}
+
+nav li.highlight {
+	background-color: #C6C6C6;
+}
+
+nav a {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 36px;
+	font-weight: 400;
+	text-transform: none;
+	color: white;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #FFF653;
+}
+
+nav li:first-child a, nav li:nth-child(2) a {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.profile-block {
+	background-color: white;
+	padding: 30px;
+	float: left;
+	width: 24%;
+	margin: 10px 10px 10px 10px;
+	display: inline-block;
+}
+
+section.profiles li:first-child {
+	margin-left: 0px;
+}
+
+section.profiles li:last-child {
+	margin-right: 0px;
+}
+
+section.profiles ul:last-child {
+	margin-bottom: 60px;
+}
+
+ul.programme {
+	padding: 0;
+	margin: 0;
+}
+
+ul.programme li {
+	display: inline-block;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	float: left;
+}
+
+/*CALL TO ACTION STYLES*/
+
+.cta {
+	padding: 10px 0;
+	border-radius: 5px;
+	display: block;
+	text-align: center;
+	margin-top: 40px;
+}
+
+.cta-yellow {
+	background-color: #FFF653;
+	border-bottom: 5px solid #CEC441;
+}
+
+.cta-gray {
+	background-color: #AAAAAA;
+	border-bottom: 5px solid #999;
+}
+
+.cta-yellow:hover {
+	background-color: #CEC441;
+}
+
+.cta-gray:hover {
+	background-color: #C6C6C6;
+}
+
+li.profile-block .cta-yellow {
+	margin-top: 30px;
+}
+
+/*SPAN CLASSES*/
+
+.taste {
+	color: #AAAAAA;
+	text-decoration: line-through;
+}
+
+.are {
+	border-bottom: solid 4px #FFF653;
+}
+
+/*ANCHOR STYLES*/
+
+a.skill {
+	color: white;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 28px;
+	text-decoration: none; 
+	background-color: #999;
+	padding: 0px 20px;
+	border-radius: 20px;
+}
+
+a.skill:hover {
+	color: #FFF653;
+}
